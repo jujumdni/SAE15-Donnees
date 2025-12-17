@@ -19,6 +19,12 @@ def covariance(LX, LY):
     my = moyenne(LY)
     return sum((x - mx) * (y - my) for x, y in zip(LX, LY)) / len(LX)
 
+def coefficient_correlation(LX, LY):
+    cov = covariance(LX, LY)
+    std_x = ecart_type(LX)
+    std_y = ecart_type(LY)
+    return cov / (std_x * std_y)
+
 print("Moyenne de L1:", moyenne(L1))
 
 ecart_type_L1 = ecart_type(L1)
@@ -29,3 +35,6 @@ print("Variance de L1:", round(variance_L1, 2))
 
 covariance_L1_L2 = covariance(L1, L2)
 print("Covariance de L1 avec L2:", round(covariance_L1_L2, 2))
+
+correlation_L1_L2 = coefficient_correlation(L1, L2)
+print("Coefficient de corrélation de L1 avec L2:", round(correlation_L1_L2, 2))
