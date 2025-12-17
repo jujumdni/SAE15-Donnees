@@ -27,14 +27,10 @@ def coefficient_correlation(LX, LY):
 
 print("Moyenne de L1:", moyenne(L1))
 
-ecart_type_L1 = ecart_type(L1)
-print("Écart type de L1:", round(ecart_type_L1, 2))
+print("Écart type de L1:", round(ecart_type(L1), 2))
 
-variance_L1 = variance(L1)
-print("Variance de L1:", round(variance_L1, 2))
+print("Variance de L1:", round(variance(L1), 2))
 
-covariance_L1_L2 = covariance(L1, L2)
-print("Covariance de L1 avec L2:", round(covariance_L1_L2, 2))
+print("Covariance de L1 avec L2:", round(covariance(L1, L2), 2))
 
-correlation_L1_L2 = coefficient_correlation(L1, L2)
-print("Coefficient de corrélation de L1 avec L2:", round(correlation_L1_L2, 2))
+print("Coefficient de corrélation de L1 avec L2:", round(coefficient_correlation(L1, L2), 2))
