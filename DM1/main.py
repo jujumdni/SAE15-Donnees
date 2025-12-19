@@ -87,5 +87,4 @@ for row in matrice:
 
 graphique_evolution(T, L1, "Évolution de L1 en fonction du temps", "Temps (heures)", "L1")
 
-# Exemple d'utilisation de la heatmap
 heatmap_correlations([T, L1, L2], ['T', 'L1', 'L2'])
